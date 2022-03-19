@@ -1,8 +1,12 @@
 [package]
-name = "server"
+name = "client"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+tokio = { git = "https://github.com/tokio-rs/tokio", features = ["full"] }
+sqlx = { git = "https://github.com/launchbadge/sqlx", features = ["runtime-tokio-rustls", "postgres"] }
+
+eframe = { git = "https://github.com/emilk/egui/" }

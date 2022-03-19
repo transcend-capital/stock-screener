@@ -1,8 +1,12 @@
+# System libraries
+import datetime
+
+# PostgreSQL
+import psycopg2
+
+# Yahoo Finance
 import pandas
 import numpy
 import yfinance
-import datetime
 
-import psycopg2
-
-now = datetime.now()
+# Retrieve postgresql database config
